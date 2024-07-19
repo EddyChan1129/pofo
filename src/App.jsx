@@ -1,10 +1,9 @@
-import React from "react";
-import Navbar from "./components/Navbar";
+import Narbar from "./components/Narbar";
 
 function App() {
   return (
-    <main className="overflow-x-hidden bg-black tracking-tighter text-gray-200 antialiased">
-      <Navbar />
+    <main>
+      <Narbar />
     </main>
   );
 }
