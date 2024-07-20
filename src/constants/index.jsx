@@ -5,11 +5,14 @@ import {
   FaFacebook,
   FaDiscord,
   FaInstagram,
+  FaNpm,
+  FaCss3,
+  FaHtml5,
 } from "react-icons/fa6";
 
-import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
+import { RiJavascriptFill, RiReactjsLine } from "react-icons/ri";
+import { TbBrandNextjs, TbVenus } from "react-icons/tb";
+import { SiMongodb, SiMysql } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -99,12 +102,32 @@ export const PROJECTS = [
 
 export const SKILLS = [
   {
-    icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-400" />,
+    icon: <FaHtml5 className="text-4xl lg:text-6xl text-orange-600" />,
+    name: "HTML",
+    experience: "2+ years",
+  },
+  {
+    icon: <FaCss3 className="text-4xl lg:text-6xl text-blue-600" />,
+    name: "CSS",
+    experience: "2+ years",
+  },
+  {
+    icon: <RiJavascriptFill className="text-4xl lg:text-6xl text-green-600" />,
+    name: "JavaScript",
+    experience: "2+ years",
+  },
+  {
+    icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-300" />,
+    name: "Node.js",
+    experience: "2+ years",
+  },
+  {
+    icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-300" />,
     name: "React",
     experience: "2+ years",
   },
   {
-    icon: <TbBrandNextjs className="text-4xl lg:text-6xl text-white" />,
+    icon: <TbBrandNextjs className="text-4xl lg:text-6xl text-gray-400" />,
     name: "Next.js",
     experience: "1+ year",
   },
@@ -114,19 +137,9 @@ export const SKILLS = [
     experience: "1.5+ years",
   },
   {
-    icon: <DiRedis className="text-4xl lg:text-6xl text-red-600" />,
-    name: "Redis",
-    experience: "1+ year",
-  },
-  {
-    icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-600" />,
-    name: "Node.js",
-    experience: "2+ years",
-  },
-  {
-    icon: <BiLogoPostgresql className="text-4xl lg:text-6xl text-sky-700" />,
-    name: "PostgreSQL",
-    experience: "1+ year",
+    icon: <SiMysql className="text-4xl lg:text-6xl text-red-300" />,
+    name: "Mysql",
+    experience: "1.5+ years",
   },
 ];
 

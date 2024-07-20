@@ -11,7 +11,7 @@ function Navbar() {
     const targetElement = document.querySelector(herf);
     if (targetElement) {
       const offset = -85;
-      const elementPosition = targetElement .getBoundingClientRect().top;
+      const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY + offset;
       window.scrollTo({
         top: offsetPosition,
@@ -22,12 +22,17 @@ function Navbar() {
   };
   return (
     <div>
-      <nav className="fixed left-0 right-0 top-4 z-50">
+      <nav className="fixed left-0 right-0 top-0 z-50">
         {/* Navbar  Desktop*/}
         <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg bg-black/20 py-3 backdrop-blur-lg lg:flex">
           <div className="flex justify-between gap-6">
             <a href="#">
-              <img src={logo} width={90} alt="logo" />
+              <img
+                src={logo}
+                width={50}
+                alt="logo"
+                className="bg-gray-200 mr-10 rounded-lg"
+              />
             </a>
           </div>
           <div>
@@ -53,7 +58,12 @@ function Navbar() {
           <div className="flex items-center justify-between">
             <div>
               <a href="#">
-                <img src={logo} width={90} alt="logo" className="m-2" />
+                <img
+                  src={logo}
+                  width={90}
+                  alt="logo"
+                  className="bg-gray-200 m-2 rounded-lg"
+                />
               </a>
             </div>
             <div className="flex items-center">
@@ -70,12 +80,12 @@ function Navbar() {
             </div>
           </div>
           {isMoblieMenuOpen && (
-            <ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md">
+            <ul className="ml-4 mt-4 flex flex-col ">
               {NAVIGATION_LINKS.map((items, index) => {
                 return (
                   <li key={index}>
                     <a
-                      className="block w-full text-xl font-semibold"
+                      className="block w-full text-xl font-semibold pb-6 hover:text-yellow-500"
                       href={items.href}
                       onClick={(e) => handleLinkClick(e, items.href)}
                     >

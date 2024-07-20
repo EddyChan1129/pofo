@@ -3,6 +3,9 @@ import HeroSection from "./components/HeroSection";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Achievements from "./components/Achievements";
+import Testimonials from "./components/Testimonials";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <About />
       <Projects />
       <Skills />
+      <Achievements />
+      <Testimonials />
+      <ContactForm />
     </main>
   );
 }
