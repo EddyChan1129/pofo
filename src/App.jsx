@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Achievements from "./components/Achievements";
 import Testimonials from "./components/Testimonials";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Achievements />
       <Testimonials />
       <ContactForm />
+      <Footer />
     </main>
   );
 }

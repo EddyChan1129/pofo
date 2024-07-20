@@ -41,8 +41,8 @@ export const NAVIGATION_LINKS = [
 ];
 
 export const PROFILE = {
-  name: "Robert Butcher",
-  info: "Full-stack developer with a flair for graphic design.",
+  name: "Eddy CHAN",
+  info: "I hope to become a Full-stack developer",
 };
 
 export const ABOUT = {
